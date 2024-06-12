@@ -1,6 +1,15 @@
 {
   "name": "griots-grimoire-web",
   "version": "0.0.0",
+  "author": {
+    "name": "Rodrigo Zandonadi",
+    "email": "rodrigo.zandonadi.dev@gmail.com",
+    "url": "https://github.com/rodrigozan"
+  },
+  "repository": {
+    "url": "https://github.com/rodrigozan/Griots-Grimoire-Web",
+    "type": "angular"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4505",
