@@ -12,11 +12,12 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 4505", 
+    "start": "ng serve --port 4505",  
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:scss": "node-sass src/scss/grimoire-theme.scss src/css/grimoire-theme.css"
+    "build:theme": "node-sass src/scss/grimoire-theme.scss src/css/grimoire-theme.css",
+    "build:scss": "node-sass src/scss/grimoire-theme.scss src/css/grimoire-theme.css && node-sass src/styles.scss src/styles.css"
   },
   "private": true,
   "dependencies": {
