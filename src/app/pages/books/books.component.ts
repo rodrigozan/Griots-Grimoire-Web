@@ -15,7 +15,11 @@ export class BooksComponent {
   constructor(private apiService: GrimoireApiService) { }
 
   ngOnInit(): void {
-    this.apiService.get('Users').subscribe((data) => {
+    this.getUsers()
+  }
+
+  public getUsers() {
+    this.apiService.get('User').subscribe((data) => {
       this.dados = data;
       console.log('Dados de usuários:')
       console.log(this.dados)
