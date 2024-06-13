@@ -1,8 +1,11 @@
 <!-- home.component.html -->
 <div class="d-flex justify-content-center align-items-center vh-100">
-  <div class="text-center">
+  <div class="text-center" *ngIf="!isLogged">
     <p>The Best Community of Writers</p>
     <h1 class="text-primary">{{title}}</h1>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <button (click)="goToRegister()" type="button" class="btn btn-primary">Let's Go</button>
+  </div>
+  <div class="text-center" *ngIf="isLogged">
+    <app-register></app-register>
   </div>
 </div>
