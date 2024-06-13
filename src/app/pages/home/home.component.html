@@ -1,6 +1,7 @@
 <!-- home.component.html -->
 <div class="d-flex justify-content-center align-items-center vh-100">
   <div class="text-center">
-    <h1 ngIf="itsTrue">{{title}}</h1>
+    <p>The Best Community of Writers</p>
+    <h1 class="text-color" *ngIf="!itsTrue">{{title}}</h1>
   </div>
 </div>
