@@ -1,1 +1,17 @@
-<p>timeline works!</p>
+<section style="background-color: #F0F2F5;">
+  <div class="container py-5">
+    <div class="main-timeline-2">
+      <div class="timeline-2 left-2" *ngFor="let info of infos">
+        <div class="card">
+          <div *ngIf="info.img != ''">
+            <img src="{{info.img}}" class="card-img-top" alt="Responsive image">
+          </div>
+          <div class="card-body p-4">
+            <p class="fw-bold mb-4">{{info.author}} | <span class="text-muted mb-4"><i class="far fa-clock" aria-hidden="true"></i> {{info.data}}</span><p>            
+            <p class="mb-0">{{info.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
