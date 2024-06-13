@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
-import { GrimoireApiService } from '../../services/grimoire-api.service';
+import { GrimoireApiService } from '../../services/grimoire-api.service'
 
 @Component({
   selector: 'app-books',
@@ -10,7 +10,7 @@ import { GrimoireApiService } from '../../services/grimoire-api.service';
   styleUrl: './books.component.scss'
 })
 export class BooksComponent {
-  dados: any;
+  dados: any
 
   constructor(private apiService: GrimoireApiService) { }
 
@@ -20,9 +20,9 @@ export class BooksComponent {
 
   public getUsers() {
     this.apiService.get('User').subscribe((data) => {
-      this.dados = data;
+      this.dados = data
       console.log('Dados de usuários:')
       console.log(this.dados)
-    });
+    })
   }
 }
