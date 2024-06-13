@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 
-import { GrimoireApiService } from '../../services/grimoire-api.service'
+import { GrimoireApiService } from '../../services/grimoire-api/grimoire-api.service'
 
 @Component({
   selector: 'app-books',
