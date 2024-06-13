@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { GrimoireApiService } from '../../services/grimoire-api.service';
 
 @Component({
