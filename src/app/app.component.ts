@@ -12,7 +12,7 @@ import { HomeComponent } from './pages/home/home.component'
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Griots Grimoire'
+  title = 'Griots Grimoire' 
   itsTrue = false
 
   constructor(){}
