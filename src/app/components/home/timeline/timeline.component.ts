@@ -16,6 +16,12 @@ export class TimelineComponent {
       text: "Texto de teste",
       author: "Autor 1",
       data: this.dataConvert(this.dateNow)
+    },
+    {
+      img: "",
+      text: "Um memorando aos autores",
+      author: "Autor Primordial",
+      data: this.dataConvert(this.dateNow)
     }
   ]
 

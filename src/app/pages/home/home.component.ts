@@ -1,8 +1,6 @@
 import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
-import { Router } from '@angular/router'
 
-import { LocalStorageService } from '../../services/local-storage/local-storage.service'
 import { RegisterComponent } from '../../components/home/register/register.component'
 
 @Component({
@@ -16,44 +14,13 @@ import { RegisterComponent } from '../../components/home/register/register.compo
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  title = 'Griots Grimoire' 
-  storedValue: string | null = ''
+  title = 'Griots Grimoire'   
   isLogged = false
-  isHidden = false
 
-  constructor(
-    private localStorageService: LocalStorageService,
-    private router: Router
-  ) { }
-
-  ngOnInit() {
-    this.saveValue()
-    this.getValue()
-    if(this.storedValue === 'griots'){
-      this.toggleVisibility()
-      this.goToTimeline()
-    }
-    
-  }
-
-  toggleVisibility(): void {
-    this.isHidden = !this.isHidden;
-  }
-
-  public saveValue(): void {
-    const value = 'griots'
-    this.localStorageService.setItem('myKey', value)
-  }
-
-  public getValue(): void {
-    this.storedValue = this.localStorageService.getItem('myKey')    
-  }
+  constructor() { }
   
   public goToRegister() {
     this.isLogged = true
   }
 
-  public goToTimeline(): void {
-    this.router.navigate(['/timeline'])
-  }
 }
