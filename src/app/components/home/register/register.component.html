@@ -1,14 +1,17 @@
-<main #register class="d-flex justify-content-center align-items-center vh-100" *ngIf="!isLogged">
+<main #register class="d-flex justify-content-center align-items-center vh-100" *ngIf="!istrue">
   <div>
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-primary">Register</h1>
+    </div>
     <div class="text-left w-100 p-3">
       <div class="mb-3">
-        <input type="text" class="form-control" id="username" placeholder="Username" required>
+        <input type="text" class="form-control" id="username" placeholder="Username">
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" id="email" placeholder="Email" required>
+        <input type="email" class="form-control" id="email" placeholder="Email">
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" id="password" placeholder="Password" required>
+        <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
       <div class="d-grid gap-2">
         <button class="btn btn-primary" type="button">Expecto Patronum</button>
@@ -18,20 +21,23 @@
       role="alert">
       <p>Or... if you already have the password to this mystical realm of Nárnia...</p>
       <div class="text-left w-100 p-3 d-grid gap-2">
-        <button (click)="goToLogin" class="btn btn-primary" type="button">just click here</button>
+        <button (click)="goToLogin()" class="btn btn-primary" type="button">just click here</button>
       </div>
     </div>
   </div>
 </main>
 
-<main #login class="d-flex justify-content-center align-items-center vh-100" *ngIf="isLogged">
+<main #login class="d-flex justify-content-center align-items-center vh-100" *ngIf="istrue">
   <div>
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-primary">Login</h1>
+    </div>
     <div class="text-left w-100 p-3">
       <div class="mb-3">
-        <input type="text" class="form-control" id="username" placeholder="Username or Email" required>
+        <input type="text" class="form-control" id="username" placeholder="Username or Email">
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" id="password" placeholder="Password" required>
+        <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
       <div class="d-grid gap-2">
         <button class="btn btn-primary" type="button">Lumos</button>
@@ -41,7 +47,7 @@
       role="alert">
       <p>Or... if you don't have the password to enter Mount Olympus yet...</p>
       <div class="text-left w-100 p-3 d-grid gap-2">
-        <button (click)="goToRegister" class="btn btn-secondary" type="button">just click here</button>
+        <button (click)="goToRegister()" class="btn btn-secondary" type="button">just click here</button>
       </div>
     </div>
   </div>

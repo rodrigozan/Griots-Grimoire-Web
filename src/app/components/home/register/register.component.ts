@@ -9,15 +9,15 @@ import { Component } from '@angular/core'
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  isLogged = false
+  istrue = false
 
   public goToLogin() {
-    this.isLogged = true
+    this.istrue = true
     console.log('ok, button started in login')
   }
 
   public goToRegister() {
-    this.isLogged = false
+    this.istrue = false
     console.log('ok, button started in register')
   }
 }
