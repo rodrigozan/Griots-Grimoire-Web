@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { HeaderComponent } from './header.component'
+import { TimelineComponent } from './timeline.component'
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent
-  let fixture: ComponentFixture<HeaderComponent>
+describe('TimelineComponent', () => {
+  let component: TimelineComponent
+  let fixture: ComponentFixture<TimelineComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [TimelineComponent]
     })
     .compileComponents()
 
-    fixture = TestBed.createComponent(HeaderComponent)
+    fixture = TestBed.createComponent(TimelineComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common'
 
 @Component({
   selector: 'app-timeline',
@@ -20,9 +20,9 @@ export class TimelineComponent {
   ]
 
   dataConvert(newData: number){
-    const data = new Date(newData);
-    const d = data.toLocaleDateString('pt-BR');
-    const t = data.toLocaleTimeString('pt-BR');
+    const data = new Date(newData)
+    const d = data.toLocaleDateString('pt-BR')
+    const t = data.toLocaleTimeString('pt-BR')
     return `${d} - ${t}`
   }
 }
