@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs'
+import * as bcrypt from 'bcryptjs';
 
 import { environment } from '../../../../environment/environment'
 
@@ -17,5 +18,16 @@ export class GrimoireApiService {
 
   get(rota: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/${rota}`)
+  }
+
+  register(username: string, email: string, password: string): Observable<any> {
+    const hashedPassword = bcrypt.hashSync(password, 10);
+    const payload = { username, email, password: hashedPassword };
+    return this.http.post(`${this.apiUrl}/register`, payload);
+  }
+
+  login(usernameOrEmail: string, password: string): Observable<any> {
+    const payload = { usernameOrEmail, password };
+    return this.http.post(`${this.apiUrl}/login`, payload);
   }
 }

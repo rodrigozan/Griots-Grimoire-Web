@@ -217,10 +217,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/forms@^18.0.2":
-  version "18.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-18.0.2.tgz#b5c7b0f8d2cdf9c9f979cbee9e9b69df920f6031"
-  integrity sha512-AGuQVav7wbX6pRhjeE6c45dlWnhb+93ZHHBRT02Wg1PRyrgmebpoLAtiUmAR/YhR45zD6Q9o7fg/076+bnIcdQ==
+"@angular/forms@^18.0.3":
+  version "18.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-18.0.3.tgz#3f3c66fb90d35a6140efa82c8b3fa6140414c967"
+  integrity sha512-+CjDiooUi5FkTP3YQmdO8YRbjZicgLGZonvCdz3mSucLrTY6w3oBocNs6+Kc7fLuO1NKSkFmAfYApBwK3fKBMg==
   dependencies:
     tslib "^2.3.0"
 
@@ -1852,6 +1852,11 @@
   resolved "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
 "@rollup/rollup-android-arm-eabi@4.18.0":
   version "4.18.0"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.18.0.tgz#bbd0e616b2078cd2d68afc9824d1fadb2f2ffd27"
@@ -2014,6 +2019,11 @@
   dependencies:
     "@tufjs/canonical-json" "2.0.0"
     minimatch "^9.0.4"
+
+"@types/bcryptjs@^2.4.6":
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/@types/bcryptjs/-/bcryptjs-2.4.6.tgz#2b92e3c2121c66eba3901e64faf8bb922ec291fa"
+  integrity sha512-9xlo6R2qDs5uixm0bcIqCeMCE6HiQsIyel9KQySStiyqNl2tnj2mP3DX1Nf56MD6KMenNNlBBsy3LJ7gUEQPXQ==
 
 "@types/body-parser@*":
   version "1.19.5"
@@ -2632,6 +2642,11 @@ batch@0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/batch/-/batch-0.6.1.tgz"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
+
+bcryptjs@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+  integrity sha512-V/Hy/X9Vt7f3BbPJEi8BdVFMByHi+jNXrYkW3huaybV/kQ0KJg0Y6PkEMbn+zeT+i+SiKZ/HMqJGIIt4LZDqNQ==
 
 big.js@^5.2.2:
   version "5.2.2"
