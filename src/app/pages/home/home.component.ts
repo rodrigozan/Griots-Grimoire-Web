@@ -19,7 +19,7 @@ export class HomeComponent {
   title = 'Griots Grimoire' 
   storedValue: string | null = ''
   isLogged = false
-  needRegister = false
+  isHidden = false
 
   constructor(
     private localStorageService: LocalStorageService,
@@ -30,9 +30,14 @@ export class HomeComponent {
     this.saveValue()
     this.getValue()
     if(this.storedValue === 'griots'){
+      this.toggleVisibility()
       this.goToTimeline()
     }
     
+  }
+
+  toggleVisibility(): void {
+    this.isHidden = !this.isHidden;
   }
 
   public saveValue(): void {
