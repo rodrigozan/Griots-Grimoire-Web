@@ -1,0 +1,15 @@
+@function get-font-family($weight) {
+    @if $weight == 'regular' {
+      @return 'Gotham-Medium';
+    } @else if $weight == 'light' {
+      @return 'Gotham-Thin';
+    } @else if $weight == 'dark' {
+      @return 'Gotham-Bold';
+    } @else {
+      @return 'Gotham-Medium'; 
+    }
+  }
+  
+  @mixin apply-font($weight) {
+    font-family: get-font-family($weight);
+  }
