@@ -22,6 +22,10 @@ export class GrimoireApiService {
 
   register(username: string, email: string, password: string): Observable<any> {
     const hashedPassword = bcrypt.hashSync(password, 10);
+    if (!username) {
+      username = email.split('@')[0];
+    }
+
     const payload = { username, email, password: hashedPassword };
     return this.http.post(`${this.apiUrl}/register`, payload);
   }
