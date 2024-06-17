@@ -1,5 +1,14 @@
 @import "../scss/grimoire-theme.scss";
 
-h1 {
-    color: $primary
+*-light {
+  @include apply-font('light');
 }
+
+*-dark {
+  @include apply-font('dark');
+}
+
+h1, h2, h3, h4, h6, h6 {
+    @include apply-font('dark');
+}
+
