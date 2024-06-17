@@ -12,3 +12,7 @@ h1, h2, h3, h4, h6, h6 {
     @include apply-font('dark');
 }
 
+p, span, em, i, strong, b, ul, li, blockquote, label, button {
+    @include apply-font('regular');
+}
+
