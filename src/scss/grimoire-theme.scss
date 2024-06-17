@@ -1,6 +1,12 @@
-$primary:       #801F4F;
-$secondary:     #FD7E14;
-$success:       #1AA179;
-$info:          #1AA179;
-$warning:       #FFC107;
-$danger:        #58151C;
+@import "./variables.scss";
+@import "./functions.scss";
+
+$primary:       $pink;
+$secondary:     $orange;
+$success:       $teal;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $dark-red;
+$light:         $light-pink;
+$dark:          $dark-pink;
+

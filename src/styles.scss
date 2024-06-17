@@ -1,2 +1,16 @@
-@import "../node_modules/bootstrap/scss/bootstrap"
-//@import "./scss/grimoire-theme"
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// import gotham font
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url('./assets/fonts/Gotham-Thin.otf'); 
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('./assets/fonts/Gotham-Medium.otf'); 
+  }
+  @font-face {
+    font-family: 'Gotham-Bold';
+    src: url('./assets/fonts/Gotham-Bold.otf'); 
+  }
